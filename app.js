@@ -21,7 +21,7 @@ const renderError = () => {
 const renderCountries = (data) => {
     console.log(data)
     const formSelect = document.querySelector(".form-select")
-    data.forEach((item) => {
+    data.sort().forEach((item) => {
         formSelect.innerHTML += `<option value="${item.name.common}">${item.name.common}</option>`
     })
 
